@@ -60,6 +60,7 @@ let numbers=[2,3,5,60,32,3,43,5]
 // console.log(..."ABC","D",..."EFG","H")
 */
 //Destructuring
+/*
 let nufus=[10000,20000,30000,[40000,100000]]
 let[kucuk,orta,buyuk,[enbuyuk,maksimum]]=nufus
 
@@ -85,4 +86,35 @@ console.log(id)
 console.log(name)
 
 //Redux
+*/
+function  add(...numbers) {
+    console.log(numbers)
+}
 
+//add(20,30)
+//add(20,30,40)
+//add(20,30,40,50)
+
+let numbers =[30,10,20,40,600,500]
+//console.log(...numbers)
+//console.log(Math.max(...numbers))
+
+let [icAnadolu,marmara,karadeniz,[icAnadoluSehirleri]]=[
+{name:"İç Anadolu",population:"20M"},
+{name:"Marmara",population:"30M"},
+{name:"Karadeniz",population:"10M"},
+[
+    ["Ankara","Konya"],
+    ["İstanbul","Bursa"],
+    ["Sinop","Trabzon"],
+]
+]
+
+//console.log(icAnadolu.name)
+//console.log(icAnadolu.population)
+//console.log(icAnadoluSehirleri)
+
+let productName, unitPrice, quantity
+({productName:newProductName,unitPrice:newUnitPrice,quantity:newQuantity})={productName:"Elma",unitPrice:10,quantity:5}
+
+console.log(newProductName)
